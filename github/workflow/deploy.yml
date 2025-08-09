@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: deploy_staging
     environment:
-      name: production
+      name: prod-env
       url: https://${{ env.APP_NAME }}.com
     steps:
       - name: Download artifact
